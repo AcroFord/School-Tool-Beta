@@ -1,4 +1,2 @@
-# School Tool
-### The Optimal Student Productivity Tool
-##### Made with React ✨
-
+# School Tool - Student Productivity Tool
+School Tool was built for students who needed a modern tool to efficiently boost their producivity.
