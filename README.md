@@ -1,2 +1,4 @@
-# School-Tool-Beta
-A student productivity tool. Made with React ✨
+# School Tool
+### The Optimal Student Productivity Tool
+##### Made with React ✨
+
