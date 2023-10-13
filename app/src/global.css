@@ -1,32 +1,24 @@
 body {
-    background-color: #181b22!important;
     color: #fff;
+    background: url("https://cloud.acroford.com/sct/backgrounds/1.webp");
 }
 
-.logo {
-    width: auto;
-    height: 10vw;
+.nav {
+    background-color: #42424291;
 }
 
-.heading {
-    margin: 0.75vw;
-    padding: 0.5vw;
-}
-
-.box {
-    padding: 0.5vw;
-    margin: 0.75vw;
-    border-color: lightgrey;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 16px;
-    text-align: center!important;
-}
-
-.code {
-    font-family: monospace!important;
-    background-color: #3d3d3dbe;
-    padding: 0.25vw;
+.icon {
+    width: auto!important;
+    height: 3vw;
     margin: 0.25vw;
-    border-radius: 5px;
+}
+
+.brandName {
+    margin: 0.15vw;
+    font-size: xx-large!important;
+}
+
+.brand {
+    padding: 0.25vw;
+    text-align: center!important;
 }
