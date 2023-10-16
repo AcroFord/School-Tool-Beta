@@ -58,7 +58,7 @@ function Widgets() {
               key={index}
               heading={widget.Content.heading}
               className={widget.Content.size}
-              preview={widget.Content.icon}
+              preview={widget.Content.preview}
               fullLink={widget.Content.iconHeight}
             />
           );
