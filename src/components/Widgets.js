@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import TextPanel from './Panels';
+import { TextPanel, TextPanelWithIcon, Notes } from './Panels';
 
 function Widgets() {
   const [widgets, setListOfWidgets] = useState([]);
@@ -20,27 +20,52 @@ function Widgets() {
       });
   }, []);
 
-  console.log("Widgets:", widgets);
   return (
-    <div>
-      {Array.isArray(widgets) ? (
-        widgets.map((widget, index) => {
-          if (widget.Type === 'TextPanel') {
-            return (
-              <TextPanel
-                key={index}
-                heading={widget.Content.heading}
-                content={widget.Content.content}
-                className={widget.size}
-              />
-            );
-          }
-          return null;
-        })
-      ) : (
-        <p>No widgets to display.</p>
-      )}
-    </div>
+    <>
+      {widgets.map((widget, index) => {
+        if (widget.Type === 'TextPanel') {
+          return (
+            <TextPanel
+              key={index}
+              heading={widget.Content.heading}
+              content={widget.Content.content}
+              className={widget.Content.size}
+            />
+          );
+        }
+        return null;
+      })}
+            {widgets.map((widget, index) => {
+        if (widget.Type === 'TextPanelWithIcon') {
+          return (
+            <TextPanelWithIcon
+              key={index}
+              heading={widget.Content.heading}
+              content={widget.Content.content}
+              className={widget.Content.size}
+              icon={widget.Content.icon}
+              iconHeight={widget.Content.iconHeight}
+              iconWidth={widget.Content.iconWidth}
+            />
+          );
+        }
+        return null;
+      })}
+                  {widgets.map((widget, index) => {
+        if (widget.Type === 'Notes') {
+          return (
+            <Notes
+              key={index}
+              heading={widget.Content.heading}
+              className={widget.Content.size}
+              preview={widget.Content.icon}
+              fullLink={widget.Content.iconHeight}
+            />
+          );
+        }
+        return null;
+      })}
+    </>
   );
 }
 
