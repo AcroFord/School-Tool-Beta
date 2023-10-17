@@ -1,0 +1,52 @@
+/* Text Panel CSS */
+.textPanelHeading {
+    color: #000!important;
+}
+
+.textPanelContent {
+    color: #000!important;
+}
+
+/* Text Panel With Icon CSS */
+.textPanelWithIconImg {
+    color: #000!important;
+}
+
+.textPanelWithIconHeading {
+    color: #000!important;
+}
+
+.textPanelWithIconContent {
+    color: #000!important;
+}
+
+/* List Panel CSS */
+.notesListHeading {
+    color: #000!important;
+}
+
+.notesListList {
+    color: #000!important;
+}
+
+.notesListItem {
+    color: #000!important; 
+}
+
+/* Notes Info*/
+.notesInfoContent {
+    color: #000!important;
+}
+
+/* Questions */
+.notesQuestion {
+    /* This is the container*/
+}
+
+.questionTitle {
+    color: #000!important;
+}
+
+.questionAnswer {
+    color: #000!important;
+}

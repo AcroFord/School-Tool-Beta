@@ -1,36 +1,34 @@
-import React, { useState } from "react";
+import React from "react";
 import "./login.css";
 import "../bootstrap.min.css";
 
 const Login = () => {
   return (
-    <div className="container text-center justify-content-center">
-    <div className="row">
-    <div className="card col d-flex justify-content-center loginCard">
-      <div className="card-body">
-        <form>
-          <input type="text" className="form-control details" placeholder="Username" />
-          <input
-            type="password"
-            className="form-control details"
-            placeholder="Password"
-          />
-          <input
-            type="submit"
-            value="Login"
-            className="btn float-right login_btn"
-          />
-        </form>
-      </div>
-      <div className="card-footer">
-        <div className="d-flex justify-content-center">
-        <a className="lnk" href="#">Sign Up</a>
-          <a className="lnk" href="#">Forgot your password?</a>
+    <section>
+      <div className="form-box">
+        <div className="form-value">
+          <form action="">
+            <h2>Login</h2>
+            <div className="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" required />
+              <label htmlFor="">Email</label>
+            </div>
+            <div className="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" required />
+              <label htmlFor="">Password</label>
+            </div>
+            <button>Log in</button>
+            <div className="register">
+              <p>
+                Don't have a account <a href="#">Sign up now!</a>
+              </p>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
+    </section>
   );
 };
 

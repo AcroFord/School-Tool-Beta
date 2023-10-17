@@ -1,13 +1,14 @@
 import React from 'react';
 import "../bootstrap.min.css"
+import "../css/widgets.css"
 
 function TextPanel({ heading, content, className }) {
   return (
     <div className={className}>
       <div className="panel panel-default">
         <div className="panel-body text-center">
-          <h1>{heading}</h1>
-          <p>{content}</p>
+          <h1 className="textPanelHeading">{heading}</h1>
+          <p className="textPanelContent">{content}</p>
         </div>
       </div>
     </div>
@@ -19,9 +20,9 @@ function TextPanelWithIcon({ heading, content, className, icon, iconHeight, icon
     <div className={className}>
       <div className="panel panel-default">
         <div className="panel-body text-center">
-          <img src={icon} height={iconHeight} width={iconWidth} alt="icon" />
-          <h2>{heading}</h2>
-          <p>{content}</p>
+          <img src={icon} height={iconHeight} width={iconWidth} className="textPanelWithIconImg" alt="icon" />
+          <h2 className="textPanelWithIconHeading">{heading}</h2>
+          <p className="textPanelWithIconContent">{content}</p>
         </div>
       </div>
     </div>
@@ -34,10 +35,10 @@ function Notes({ heading, preview, fullLink, className }) {
       if (key === "list") {
         return (
           <div className="notesList" key={index}>
-            <h2>{value.name}</h2>
-            <ul>
+            <h2 className="notesListHeading">{value.name}</h2>
+            <ul className="notesListList">
               {value.content.map((item, idx) => (
-                <li key={idx}>{item}</li>
+                <li className="notesListItem" key={idx}>{item}</li>
               ))}
             </ul>
           </div>
@@ -46,7 +47,7 @@ function Notes({ heading, preview, fullLink, className }) {
         const TagName = key;
         return (
           <div className={`notes${key.toUpperCase()}`} key={index}>
-            {typeof value === "string" ? <TagName>{value}</TagName> : value}
+            {typeof value === "string" ? <TagName className="notesInfoContent" >{value}</TagName> : value}
           </div>
         );
       }
@@ -68,7 +69,7 @@ function Notes({ heading, preview, fullLink, className }) {
         <div className="panel-body text-center">
           <h1>{heading}</h1>
           <div className="notesContainer">{renderPreviewElements()}</div>
-          <button className="btn btn-primary" href={fullLink}>Read More</button>
+          <a className="btn btn-primary" target="blank" href={fullLink}>Read More</a>
         </div>
       </div>
     </div>
