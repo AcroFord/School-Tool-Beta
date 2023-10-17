@@ -1,0 +1,48 @@
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.details {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white!important;
+    margin: 0.35vw;
+    padding: 0.4vw;
+    border-style: none;
+    border-radius: 6px;
+}
+
+.lnk {
+    color: white!important;
+    background-color: blue;
+    margin: 0.35vw;
+    padding: 0.4vw;
+    border-style: none;
+    border-radius: 6px;
+    text-decoration: none!important;
+}
+
+.loginCard {
+    margin-top: 2vw;
+    border-style: none;
+    border-radius: 6px;
+    color: white!important;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.container {
+    width: 100%!important;
+}
