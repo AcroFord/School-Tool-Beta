@@ -27,3 +27,55 @@
     },
     "Type": "Notes"
   }]
+
+{
+  "Type": "Lesson",
+  "ContentNo": 3,
+  "Content": {
+    "1": {
+      "Type": "Heading",
+      "Content": "This is a heading"
+    },
+    "2": {
+      "Type": "Paragraph",
+      "Content": "This is a paragraph"
+    },
+    "3": {
+      "Type": "Image",
+      "Content": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    },
+    "4": {
+      "Type": "Video",
+      "Content": {
+        "type": "embed",
+        "source": "https://www.youtube.com/embed/2zNSgSzhBfM"
+      }
+    },
+    "5": {
+      "Type": "2COL", /*This is a 2 Columns, use class col-md-5 for this.*/
+      "Column1No": 2,
+      "Column2No": 1,
+      "Content": {
+        "column_1": {
+          "1": {
+            "Type": "Heading",
+            "Content": "This is a heading"
+          },
+          "2": {
+            "Type": "Paragraph",
+            "Content": "This is a paragraph"
+          },
+        },
+        "column_2": {
+          "1": {
+            "Type": "Video",
+            "Content": {
+              "type": "embed",
+              "source": "https://www.youtube.com/embed/2zNSgSzhBfM"
+            }
+          }
+        }
+      }
+    }
+  }
+}

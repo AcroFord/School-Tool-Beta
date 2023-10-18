@@ -45,11 +45,16 @@
 
 .notesListItem {
     color: #000!important; 
-    padding: 0.1vw;
-    margin: 0.1vw;
+    padding: 0.35vw;
+    margin: auto!important;
+    list-style-type: "-";
+    list-style-position: inside;
+    border-style: none;
+    border-radius: 10px;
 }
 
 .notesHeader {
+    margin-bottom: 1vw!important;
     color: #000!important;
     padding: 0.1vw;
     margin: 0.1vw;
@@ -99,10 +104,48 @@
     color: #000!important;
     padding: 0.1vw;
     margin: 0.1vw;
+    background: #bc4e9c!important;
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c)!important;
+    background: linear-gradient(to right, #f80759, #bc4e9c)!important;    
 }
 
 .infoBoxContent {
     color: #000!important;
     padding: 0.1vw;
     margin: 0.1vw;
+}
+
+/* LESSON WIDGET CSS */
+.lessonH {
+    color: #000!important;
+    margin: 0.3vw!important;
+    padding: 0.55vw!important;
+}
+
+.lessonP {
+    color: #000!important;
+    margin: 0.3vw!important;
+    padding: 0.55vw!important;
+}
+
+.lessonVC {
+    /*Video Container*/
+    border-radius: 16px;
+    margin: 0.3vw!important;
+    padding: 0.55vw!important;
+}
+
+.lessonV {
+    border-radius: 16px;
+    height: 20vw!important;
+    width: 100%!important;
+    margin: 0.3vw!important;
+    padding: 0.55vw!important;
+}
+
+.lessonI {
+    border-radius: 7px;
+    /*This is the image element*/
+    margin: 0.3vw!important;
+    padding: 0.55vw!important;
 }
