@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import '../bootstrap.min.css';
 import '../global.css';
 import Nav from '../components/Nav';
