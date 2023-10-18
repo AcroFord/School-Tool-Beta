@@ -3,7 +3,6 @@ import '../bootstrap.min.css';
 import '../global.css';
 import Nav from '../components/Nav';
 import Widgets from "../components/Widgets";
-import "../widgets.css"
 
 function App() {
   return (

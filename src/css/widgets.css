@@ -1,41 +1,69 @@
 /* Text Panel CSS */
 .textPanelHeading {
     color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
 }
 
 .textPanelContent {
     color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
 }
 
 /* Text Panel With Icon CSS */
 .textPanelWithIconImg {
     color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
 }
 
 .textPanelWithIconHeading {
     color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
 }
 
 .textPanelWithIconContent {
     color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
 }
 
 /* List Panel CSS */
 .notesListHeading {
     color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
 }
 
 .notesListList {
     color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
 }
 
 .notesListItem {
     color: #000!important; 
+    padding: 0.1vw;
+    margin: 0.1vw;
+}
+
+.notesHeader {
+    color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
+}
+
+.notesRedirect {
+    /*This is the button*/
 }
 
 /* Notes Info*/
 .notesInfoContent {
     color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
 }
 
 /* Questions */
@@ -45,8 +73,20 @@
 
 .questionTitle {
     color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
 }
 
 .questionAnswer {
     color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
+}
+
+.panel-body {
+    padding: 1vw!important;
+}
+
+.panel {
+    margin: 1vw!important;
 }

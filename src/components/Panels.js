@@ -67,9 +67,9 @@ function Notes({ heading, preview, fullLink, className }) {
     <div className={className}>
       <div className="panel panel-default">
         <div className="panel-body text-center">
-          <h1>{heading}</h1>
+          <h1 className="notesHeader" ><b>{heading}</b></h1>
           <div className="notesContainer">{renderPreviewElements()}</div>
-          <a className="btn btn-primary" target="blank" href={fullLink}>Read More</a>
+          <a className="btn btn-primary notesRedirect" target="blank" href={fullLink}>Read More</a>
         </div>
       </div>
     </div>
