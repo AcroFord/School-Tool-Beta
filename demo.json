@@ -1,0 +1,29 @@
+[{
+    "Content": {
+      "content": "This is a paragraph",
+      "heading": "This is a heading",
+      "icon": "This is an icon for the top of this object's box",
+      "iconHeight": "75px",
+      "iconWidth": "auto!important",
+      "size": "col-md-7" /* This is the size of the card using boostrap classes */
+    },
+    "Type": "TextPanelWithIcon"
+  }, {
+    "Content": {
+      "fullLink": "https://www.bbc.co.uk/bitesize/guides/zs4mk2p/revision/1", /* This is the link to the full article */
+      "heading": "Photosynthesis", /* This is a demo heading of a 'notes' object */
+      "preview": {
+        "list": {
+        /*Content is an array which is rendered as a list, 'name' is the heading/title of the list.*/
+          "content": ["The energy for photosynthesis comes from light.", "During photosynthesis, plants use sunlight, water, and carbon dioxide to make their food.", "Light energy is converted to chemical energy by chlorophyll.", "The green color of leaves is due to chlorophyll.", "When plants take carbon dioxide from the air, they release oxygen."],
+          "name": "Fun facts"
+        },
+        "question": {
+        /*This question object is in the 'notes' object, the question has 2 attributes, a 'title', which is a question and an answer*/
+          "answer": "The process in which plants convert carbon dioxide and sunlight into glucose and oxygen",
+          "title": "What is Photosynthesis?"
+        }
+      }
+    },
+    "Type": "Notes"
+  }]

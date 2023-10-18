@@ -1,0 +1,37 @@
+[{
+    "Content": {
+      "content": "This is the beginning of our journey.",
+      "heading": "Welcome to School Tool!",
+      "icon": "https://schooltool.io/assets/img/logo.webp",
+      "iconHeight": "75px",
+      "iconWidth": "auto!important",
+      "size": "col-md-7"
+    },
+    "Type": "TextPanelWithIcon"
+  }, {
+    "Content": {
+      "content": "This is an app!",
+      "heading": "Here's a tip!",
+      "icon": "https://icons.iconarchive.com/icons/dtafalonso/ios8/256/Tips-icon.png",
+      "iconHeight": "75px",
+      "iconWidth": "auto!important",
+      "size": "col-sm-5"
+    },
+    "Type": "TextPanelWithIcon"
+  }, {
+    "Content": {
+      "fullLink": "https://www.bbc.co.uk/bitesize/guides/zs4mk2p/revision/1",
+      "heading": "That's a recap for Science",
+      "preview": {
+        "list": {
+          "content": ["The energy for photosynthesis comes from light.", "During photosynthesis, plants use sunlight, water, and carbon dioxide to make their food.", "Light energy is converted to chemical energy by chlorophyll.", "The green color of leaves is due to chlorophyll.", "When plants take carbon dioxide from the air, they release oxygen."],
+          "name": "Fun facts"
+        },
+        "question": {
+          "answer": "The process in which plants convert carbon dioxide and sunlight into glucose and oxygen",
+          "title": "What is Photosynthesis?"
+        }
+      }
+    },
+    "Type": "Notes"
+  }]

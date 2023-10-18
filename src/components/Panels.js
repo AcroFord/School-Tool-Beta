@@ -76,5 +76,13 @@ function Notes({ heading, preview, fullLink, className }) {
   );
 }
 
+function Info ({ header, content }) {
+  return (
+    <div className="infoBox">
+      <h1 className="infoHeader">{header}</h1>
+      <p className="infoContent">{content}</p>
+    </div>
+  );
+}
 
 export { TextPanel, TextPanelWithIcon, Notes };

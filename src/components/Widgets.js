@@ -65,6 +65,19 @@ function Widgets() {
         }
         return null;
       })}
+                        {widgets.map((widget, index) => {
+        if (widget.Type === 'Info') {
+          return (
+            <Notes
+              key={index}
+              heading={widget.Content.heading}
+              className={widget.Content.size}
+              content={widget.Content.content}
+            />
+          );
+        }
+        return null;
+      })}
     </>
   );
 }

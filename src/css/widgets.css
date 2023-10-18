@@ -90,3 +90,19 @@
 .panel {
     margin: 1vw!important;
 }
+
+.infoBox {
+    /*This is a container*/
+}
+
+.infoBoxHeader {
+    color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
+}
+
+.infoBoxContent {
+    color: #000!important;
+    padding: 0.1vw;
+    margin: 0.1vw;
+}
