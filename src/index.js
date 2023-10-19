@@ -15,7 +15,6 @@ function Main() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/app/home" element={<App />} />
-        <Route exact path="/app/login" element={<Login />} />
         <Route exact path="/app/editor" element={<Editor />} />
         <Route exact path="/app/viewer" element={<MyViewer />} />
         <Route exact path="/app/login" element={<LoginButton />} />
