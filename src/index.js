@@ -5,6 +5,13 @@ import App from './pages/app';
 import Login from './pages/login';
 import Editor from './pages/editor';
 import MyViewer from './pages/viewer';
+import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
+
+const LoginButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  return <button onClick={() => loginWithRedirect()}>Log In</button>;
+};
 
 function Main() {
   return (
@@ -21,5 +28,14 @@ function Main() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Main />
+  <Auth0Provider
+    domain="dev-qo6rnjmfafd2euvt.us.auth0.com"
+    clientId="6HEb6f6pEyiKsolY2B169jLKHSuHUnZ4"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
+    <LoginButton />
+    <Main />
+  </Auth0Provider>,
 );
