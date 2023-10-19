@@ -6,12 +6,9 @@ import Login from './pages/login';
 import Editor from './pages/editor';
 import MyViewer from './pages/viewer';
 import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
-
-const LoginButton = () => {
-  const { loginWithRedirect } = useAuth0();
-
-  return <button onClick={() => loginWithRedirect()}>Log In</button>;
-};
+import LoginButton from "./components/Login";
+import LogoutButton from "./components/Logout";
+import Profile from "./components/Profile";
 
 function Main() {
   return (
@@ -21,6 +18,9 @@ function Main() {
         <Route exact path="/app/login" element={<Login />} />
         <Route exact path="/app/editor" element={<Editor />} />
         <Route exact path="/app/viewer" element={<MyViewer />} />
+        <Route exact path="/app/login" element={<LoginButton />} />
+        <Route exact path="/app/logout" element={<LogoutButton />} />
+        <Route exact path="/app/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
@@ -35,7 +35,6 @@ root.render(
       redirect_uri: window.location.origin
     }}
   >
-    <LoginButton />
     <Main />
   </Auth0Provider>,
 );
